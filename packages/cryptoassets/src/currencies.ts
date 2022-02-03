@@ -1566,6 +1566,29 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     ],
     explorerViews: [],
   },
+  luna: {
+    type: "CryptoCurrency",
+    id: "luna",
+    coinType: 330,
+    name: "Luna",
+    managerAppName: "Terra",
+    ticker: "LUNA",
+    scheme: "luna",
+    color: "#0C368A",
+    family: "terra",
+    units: [
+      {
+        name: "LUNA",
+        code: "LUNA",
+        magnitude: 6,
+      }
+    ],
+    explorerViews: [{
+        tx: "https://finder.terra.money/mainnet/tx/$hash",
+        address: "https://finder.terra.money/mainnet/address/$address",
+      }
+    ],
+  },
   mix: {
     type: "CryptoCurrency",
     id: "mix",
@@ -2596,6 +2619,29 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  ust: {
+    type: "CryptoCurrency",
+    id: "ust",
+    coinType: 330,
+    name: "UST",
+    managerAppName: "Terra",
+    ticker: "UST",
+    scheme: "ust",
+    color: "#0C368A",
+    family: "terra",
+    units: [
+      {
+        name: "UST",
+        code: "UST",
+        magnitude: 6,
+      }
+    ],
+    explorerViews: [{
+        tx: "https://finder.terra.money/mainnet/tx/$hash",
+        address: "https://finder.terra.money/mainnet/address/$address",
+      }
+    ],
+  },
   vechain: {
     type: "CryptoCurrency",
     id: "vechain",
@@ -3023,6 +3069,30 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  luna_testnet: {
+    type: "CryptoCurrency",
+    id: "luna_testnet",
+    coinType: 330,
+    name: "Luna testnet",
+    managerAppName: "Terra",
+    ticker: "LUNA",
+    scheme: "luna_testnet",
+    color: "#0C368A",
+    family: "terra",
+    isTestnetFor: "luna",
+    units: [
+      {
+        name: "LUNA",
+        code: "LUNA",
+        magnitude: 6,
+      }
+    ],
+    explorerViews: [{
+        tx: "https://finder.terra.money/testnet/tx/$hash",
+        address: "https://finder.terra.money/testnet/address/$address",
+      }
+    ],
+  },
   solana_testnet: {
     type: "CryptoCurrency",
     id: "solana_testnet",
@@ -3089,6 +3159,30 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
         address: "https://solanabeach.io/?cluster=devnet",
         tx: "https://solanabeach.io/transaction/$hash?cluster=devnet",
       },
+    ],
+  },
+  ust_testnet: {
+    type: "CryptoCurrency",
+    id: "ust_testnet",
+    coinType: 330,
+    name: "UST testnet",
+    managerAppName: "Terra",
+    ticker: "UST",
+    scheme: "ust_testnet",
+    color: "#0C368A",
+    family: "terra",
+    isTestnetFor: "ust",
+    units: [
+      {
+        name: "UST",
+        code: "UST",
+        magnitude: 6,
+      }
+    ],
+    explorerViews: [{
+        tx: "https://finder.terra.money/testnet/tx/$hash",
+        address: "https://finder.terra.money/testnet/address/$address",
+      }
     ],
   },
   filecoin: {
