@@ -285,6 +285,10 @@ Just add `project.code-workspace` to your `.vscode` folder
       "path": "../packages/hw-app-str"
     },
     {
+      "name": "hw-app-terra",
+      "path": "../packages/hw-app-terra"
+    },
+    {
       "name": "hw-app-tezos",
       "path": "../packages/hw-app-tezos"
     },
