@@ -43,7 +43,7 @@ export default class Terra {
     this.transport = transport;
     transport.decorateAppAPIMethods(
       this,
-      ["getAddress", "sign", "getAppConfiguration"],
+      ["getAddress", "signTransaction", "getAppConfiguration"],
       scrambleKey
     );
   }
@@ -138,7 +138,7 @@ export default class Terra {
     return Promise.resolve().then(() => iterate(0, arr, []));
   }
 
-  async sign(
+  async signTransaction(
     path: string,
     message: string
   ): Promise<{
